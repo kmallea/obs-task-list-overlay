@@ -105,3 +105,5 @@ app.get('/close', function(req, res){
 app.listen(config.server_port);
 console.log('Server listening on port ' + config.server_port + '.');
 writeTopic(config.task_list_items[0].topic, 'C');
+
+module.exports = app;
