@@ -1,0 +1,21 @@
+.lower-thirds-list {
+    list-style-type:none;
+    padding:0;
+    width:600px;
+}
+
+.lower-thirds-list li{
+    display: block;
+    width:auto;
+    -webkit-transition-duration: 600ms;
+    transition-duration: 600ms;
+}
+
+.lower-thirds-list li.hidden{
+    transform: translate(-100%);
+}
+
+.lower-thirds-list .title{
+    background-color:red;
+    padding:10px;
+}

@@ -1,6 +1,54 @@
+@font-face {
+  font-family: 'Lemon/Milk Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Regular'), url('https://okkhary.com/fonts/LemonMilk.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Lemon/Milk Regular italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Regular italic'), url('https://okkhary.com/fonts/LemonMilkitalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Lemon/Milk light italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk light italic'), url('https://okkhary.com/fonts/LemonMilklightitalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Lemon/Milk Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Bold'), url('https://okkhary.com/fonts/LemonMilkbold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Lemon/Milk Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk Bold'), url('https://okkhary.com/fonts/LemonMilkbolditalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Lemon/Milk light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Lemon/Milk light Regular'), url('https://okkhary.com/fonts/LemonMilklight.woff') format('woff');
+  }
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-family:'Lemon/Milk Regular';
+ font-weight:normal;
+  font-size: 30px;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -16,11 +64,9 @@ body {
   position: relative;
   height: 70px;
   width: 350px;
-  background-color: #bc1142;
+  background-color: #7b0623bd;
   float: left;
   font-size: 55px;
-  font-weight: normal;
-  font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
 }
 
 .left span, .right span {
@@ -34,7 +80,7 @@ body {
   font-size: 0;
   width: 0;
   height: 0;
-  border-top: 70px solid #bc1142;
+  border-top: 70px solid #7b0623bd;
   border-bottom: 50px solid transparent;
   border-left: 0px solid transparent;
   border-right: 50px solid transparent;
@@ -45,8 +91,9 @@ body {
 
 .right {
   margin-left: 60px;
-  width: 125px;
-  color: #bc1142;
+  padding-right: 40px;
+  width: 170px;
+  color: #7b0624;
   background-color: #fff;
 }
 
@@ -65,25 +112,48 @@ body {
   left: -50px;
 }
 
+.menu{
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+
+.menu.closed{
+  transform: translate(-100%);
+}
+
 /* Styles for the task list */
 .task-list-wrapper {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 2px 0 20px;
-  width: 320px;
+  width: 400px;
+  
 }
 
 .task-list {
   margin: 5px 0;
-  padding: 20px 0;
+  padding: 0px 0;
   list-style-type: none;
 }
 
 .task-list li {
   margin: 0;
   padding: 6px 20px;
+  letter-spacing:1px;
+  border-bottom:solid 3px;
+  border-bottom-color: black;
 }
 
 .task-list li.active {
-  color: #000;
-  background-color: #fff;
+  color: #fbff00 !important;
+  background-color: #7b0623bd !important;
+  text-decoration: none !important;
+}
+
+.task-list li.visited {
+  text-decoration: line-through;
+  color: #bbbbbb;
+}
+
+.task-list li.hidden {
+  display: none;
 }
