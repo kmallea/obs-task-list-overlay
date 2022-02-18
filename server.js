@@ -8,9 +8,9 @@ var isOpened = false;
 var fs = require('fs');
 
 console.log(process.cwd());
-console.log('PATH ' + path.join(__dirname, '','config.json'));
+console.log('PATH ' + path.join(__dirname, '','settings.json'));
 // Load in the config.
-let rawconfig = fs.readFileSync(path.join(__dirname, '','config.json'));
+let rawconfig = fs.readFileSync(path.join(__dirname, '','settings.json'));
 let config = JSON.parse(rawconfig);
 
 const writeTopic = (content,currentNext) => {

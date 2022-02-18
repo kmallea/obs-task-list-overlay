@@ -1,0 +1,26 @@
+{
+   "server_port": 8080,
+   "task_list_title": "#KCLIVE // ",
+   "show_date": "Fri Dec 31",
+   "episode":"140",
+   "task_list_title_width": "450px",
+   "task_list_items": [
+      {"topic":"Wed Feb 16", "show_in_list":false},
+	  {"topic":"Bronx, NY Visit", "show_in_list":true},
+	  {"topic":"Valentines Worst Holiday Ever?", "show_in_list":true},
+	  {"topic":"Musiq Soulchild Verzuz Anthony Hamilton", "show_in_list":true},
+	  {"topic":"A White and Black Kid Fight, Cops Show Up and...", "show_in_list":true},
+      {"topic":"TOPIC: Toxic Behavior", "show_in_list":true},
+	  {"topic":"Body Shaming Ok For Men?", "show_in_list":true},
+	  {"topic":"Super Bowl LVI", "show_in_list":true},
+	  {"topic":"See You Fri", "show_in_list":false}
+   ],
+   "lower_thirds_interval" : 3000,
+   "lower_thirds_repeat" : false,
+   "lower_thirds_items":[
+      {"title" : "Nov 3", "sub_title" : "Episode 125"},
+      {"title" : "Khary", "sub_title" : "@okkhary"},
+      {"title" : "Beez", "sub_title" : "@iam_da_real_beez_buddahz"},
+      {"title" : "Tati", "sub_title" : "@herbalgoddess3_"}
+   ]
+}
