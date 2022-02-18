@@ -25,7 +25,7 @@ const writeTopic = (content,currentNext) => {
         writePath = 'nextSegment.txt';
     }
     console.log(content,writePath);
-    fs.writeFile(usePath+writePath, content, err => {
+    fs.writeFile(path.join(__dirname, '',usePath+writePath), content, err => {
         if (err) {
             console.error(err)
             return
