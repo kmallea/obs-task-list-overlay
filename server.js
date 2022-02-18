@@ -7,8 +7,10 @@ var lowerStep = 1;
 var isOpened = false;
 var fs = require('fs');
 
+console.log(process.cwd());
+console.log('PATH ' + path.join(__dirname, '','config.json'));
 // Load in the config.
-let rawconfig = fs.readFileSync('config.json');
+let rawconfig = fs.readFileSync(path.join(__dirname, '','config.json'));
 let config = JSON.parse(rawconfig);
 
 const writeTopic = (content,currentNext) => {
@@ -104,4 +106,5 @@ app.get('/close', function(req, res){
 // Start listening on configured port.
 app.listen(config.server_port);
 console.log('Server listening on port ' + config.server_port + '.');
+
 writeTopic(config.task_list_items[0].topic, 'C');
