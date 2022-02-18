@@ -8,7 +8,7 @@ var isOpened = false;
 var fs = require('fs');
 
 // Load in the config.
-let rawconfig = fs.readFileSync('config.json');
+let rawconfig = fs.readFileSync(path.join(__dirname, '','config.json'));
 let config = JSON.parse(rawconfig);
 
 const writeTopic = (content,currentNext) => {
