@@ -1,6 +1,7 @@
 {
   "name": "itemtracker",
   "description": "Overlay Node.js app.",
+  "main":"server.js",
   "author": "Jeff Geerling <geerlingguy@mac.com>",
   "dependencies": {
     "express": "4.x"
