@@ -13,13 +13,19 @@ console.log('PATH ' + path.join(__dirname, '','settings.json'));
 let rawconfig = fs.readFileSync(path.join(__dirname, '','settings.json'));
 let config = JSON.parse(rawconfig);
 
+const isDev = false;
+const serverPaths = {
+    local : '/obs stream/assets/kharys crib/live-stream/headlines/',
+    prod : '/headlines/'
+};
+const usePath = isDev ? serverPaths.local : serverPaths.prod;
 const writeTopic = (content,currentNext) => {
     writePath = 'currentSegment.txt';
     if(currentNext === 'N'){
         writePath = 'nextSegment.txt';
     }
     console.log(content,writePath);
-    fs.writeFile('/obs stream/assets/kharys crib/live-stream/headlines/'+writePath, content, err => {
+    fs.writeFile(usePath+writePath, content, err => {
         if (err) {
             console.error(err)
             return
